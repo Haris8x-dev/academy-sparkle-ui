@@ -29,9 +29,16 @@ const preengSubjects = [
   { id: "english", label: "English" },
 ];
 
+const mockSessions = [
+  { id: "1", title: "MDCAT Preparation Session" },
+  { id: "2", title: "ECAT Engineering Prep" },
+  { id: "3", title: "9th Grade Regular Session" },
+];
+
 const Admissions = () => {
   const [group, setGroup] = useState<string>("");
   const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
+  const [selectedSession, setSelectedSession] = useState<string>("no-session");
 
   const availableSubjects = group === "pre-medical" ? premedSubjects : group === "pre-engineering" ? preengSubjects : [];
 
@@ -72,6 +79,23 @@ const Admissions = () => {
               <div className="space-y-2">
                 <Label htmlFor="fatherName">Father's Name</Label>
                 <Input id="fatherName" placeholder="Enter father's name" />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="session">Assign to Session</Label>
+                <Select value={selectedSession} onValueChange={setSelectedSession}>
+                  <SelectTrigger className="bg-background">
+                    <SelectValue placeholder="Select session" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-popover">
+                    <SelectItem value="no-session">No Session</SelectItem>
+                    {mockSessions.map((session) => (
+                      <SelectItem key={session.id} value={session.id}>
+                        {session.title}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
 
               <div className="space-y-2">

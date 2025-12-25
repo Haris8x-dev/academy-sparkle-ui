@@ -11,6 +11,8 @@ import Finance from "./pages/Finance";
 import Attendance from "./pages/Attendance";
 import Classes from "./pages/Classes";
 import Configuration from "./pages/Configuration";
+import Timetable from "./pages/Timetable";
+import Sessions from "./pages/Sessions";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +31,8 @@ const App = () => (
           <Route path="/finance" element={<Finance />} />
           <Route path="/attendance" element={<Attendance />} />
           <Route path="/classes" element={<Classes />} />
+          <Route path="/timetable" element={<Timetable />} />
+          <Route path="/sessions" element={<Sessions />} />
           <Route path="/configuration" element={<Configuration />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
