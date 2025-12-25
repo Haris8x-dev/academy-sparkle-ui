@@ -11,6 +11,8 @@ import {
   ChevronLeft,
   ChevronRight,
   BookOpen,
+  Clock,
+  CalendarClock,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -22,6 +24,8 @@ const navItems = [
   { icon: DollarSign, label: "Finance", path: "/finance" },
   { icon: Calendar, label: "Attendance", path: "/attendance" },
   { icon: BookOpen, label: "Classes", path: "/classes" },
+  { icon: Clock, label: "Timetable", path: "/timetable" },
+  { icon: CalendarClock, label: "Sessions", path: "/sessions" },
   { icon: Settings, label: "Configuration", path: "/configuration" },
 ];
 

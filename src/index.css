@@ -9,7 +9,7 @@
 
 @layer base {
   :root {
-    /* Core palette - Orange Academy Theme */
+    /* Core palette - Sky Blue Academy Theme */
     --background: 0 0% 98%;
     --foreground: 222 47% 11%;
 
@@ -19,11 +19,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    /* Primary - Vibrant Orange */
-    --primary: 24 95% 53%;
+    /* Primary - Sky Blue */
+    --primary: 199 89% 48%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 24 100% 95%;
-    --primary-hover: 24 95% 45%;
+    --primary-light: 199 100% 95%;
+    --primary-hover: 199 89% 40%;
 
     /* Secondary - Slate */
     --secondary: 215 20% 95%;
@@ -32,9 +32,9 @@
     --muted: 215 20% 95%;
     --muted-foreground: 215 16% 47%;
 
-    /* Accent - Light Orange */
-    --accent: 24 100% 95%;
-    --accent-foreground: 24 95% 40%;
+    /* Accent - Light Sky Blue */
+    --accent: 199 100% 95%;
+    --accent-foreground: 199 89% 35%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
@@ -54,37 +54,37 @@
 
     --border: 215 20% 90%;
     --input: 215 20% 90%;
-    --ring: 24 95% 53%;
+    --ring: 199 89% 48%;
 
     --radius: 0.75rem;
 
     /* Sidebar - Dark Slate Theme */
     --sidebar-background: 222 47% 11%;
     --sidebar-foreground: 215 20% 85%;
-    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary: 199 89% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 222 47% 16%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 222 47% 18%;
-    --sidebar-ring: 24 95% 53%;
+    --sidebar-ring: 199 89% 48%;
     --sidebar-muted: 215 16% 60%;
 
     /* Chart colors */
-    --chart-1: 24 95% 53%;
+    --chart-1: 199 89% 48%;
     --chart-2: 142 76% 36%;
     --chart-3: 222 47% 40%;
     --chart-4: 38 92% 50%;
     --chart-5: 280 65% 60%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(24 95% 53%), hsl(24 95% 45%));
-    --gradient-header: linear-gradient(135deg, hsl(24 95% 53%), hsl(30 95% 50%));
+    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%), hsl(199 89% 40%));
+    --gradient-header: linear-gradient(135deg, hsl(199 89% 48%), hsl(205 89% 45%));
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.05);
     --shadow-md: 0 4px 6px -1px hsl(222 47% 11% / 0.1), 0 2px 4px -2px hsl(222 47% 11% / 0.1);
     --shadow-lg: 0 10px 15px -3px hsl(222 47% 11% / 0.1), 0 4px 6px -4px hsl(222 47% 11% / 0.1);
-    --shadow-glow: 0 0 20px hsl(24 95% 53% / 0.2);
+    --shadow-glow: 0 0 20px hsl(199 89% 48% / 0.2);
   }
 
   .dark {
@@ -97,10 +97,10 @@
     --popover: 222 47% 9%;
     --popover-foreground: 215 20% 95%;
 
-    --primary: 24 95% 53%;
+    --primary: 199 89% 48%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 24 95% 15%;
-    --primary-hover: 24 95% 60%;
+    --primary-light: 199 89% 15%;
+    --primary-hover: 199 89% 55%;
 
     --secondary: 222 47% 15%;
     --secondary-foreground: 215 20% 95%;
@@ -108,8 +108,8 @@
     --muted: 222 47% 15%;
     --muted-foreground: 215 16% 60%;
 
-    --accent: 24 95% 15%;
-    --accent-foreground: 24 95% 70%;
+    --accent: 199 89% 15%;
+    --accent-foreground: 199 89% 70%;
 
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 100%;
@@ -120,7 +120,7 @@
 
     --border: 222 47% 18%;
     --input: 222 47% 18%;
-    --ring: 24 95% 53%;
+    --ring: 199 89% 48%;
 
     --sidebar-background: 222 47% 6%;
     --sidebar-foreground: 215 20% 85%;

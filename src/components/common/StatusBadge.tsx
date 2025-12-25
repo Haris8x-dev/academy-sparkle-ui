@@ -1,10 +1,11 @@
 import { cn } from "@/lib/utils";
 
 interface StatusBadgeProps {
-  status: "paid" | "pending" | "partial" | "active" | "inactive";
+  status: "paid" | "pending" | "partial" | "active" | "inactive" | "success" | "warning" | "default" | "upcoming" | "completed";
+  children?: React.ReactNode;
 }
 
-const statusStyles = {
+const statusStyles: Record<StatusBadgeProps["status"], { bg: string; text: string; label: string }> = {
   paid: {
     bg: "bg-success-light",
     text: "text-success",
@@ -30,20 +31,45 @@ const statusStyles = {
     text: "text-muted-foreground",
     label: "Inactive",
   },
+  success: {
+    bg: "bg-success-light",
+    text: "text-success",
+    label: "Success",
+  },
+  warning: {
+    bg: "bg-warning-light",
+    text: "text-warning",
+    label: "Warning",
+  },
+  default: {
+    bg: "bg-secondary",
+    text: "text-muted-foreground",
+    label: "Default",
+  },
+  upcoming: {
+    bg: "bg-warning-light",
+    text: "text-warning",
+    label: "Upcoming",
+  },
+  completed: {
+    bg: "bg-muted",
+    text: "text-muted-foreground",
+    label: "Completed",
+  },
 };
 
-export function StatusBadge({ status }: StatusBadgeProps) {
+export function StatusBadge({ status, children }: StatusBadgeProps) {
   const styles = statusStyles[status];
 
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium",
+        "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium capitalize",
         styles.bg,
         styles.text
       )}
     >
-      {styles.label}
+      {children || styles.label}
     </span>
   );
 }
